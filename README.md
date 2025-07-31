@@ -74,13 +74,13 @@ smart-todo-list/ <br>
 1. Download or clone this repo: <br>
 ```bash <br>
 git clone https://github.com/suresh-2201/Smart-To-Do-List
-Open the folder and launch index.html in your browser <br>
+Open the folder and launch index.html in your browser
 
-✅ No installation needed – runs fully in browser (no server required) <br>
+✅ No installation needed – runs fully in browser (no server required) 
  
 
-## 🙌 Acknowledgements <br>
+## 🙌 Acknowledgements
 
-Inspired by Angela Yu's Web Development Bootcamp. <br>
+Inspired by Angela Yu's Web Development Bootcamp.
 
-Made with ❤️ by Suresh Kumar Prajapat C <br>
+Made with ❤️ by Suresh Kumar Prajapat C
