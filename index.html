@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart To-Do List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+  <div class="container todo-app mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>📝 Smart To-Do List</h2>
+      <div>
+        <button class="btn btn-outline-secondary btn-sm" onclick="toggleTheme()">🌗</button>
+        <button class="btn btn-outline-success btn-sm" onclick="exportToPDF()">Export PDF</button>
+        <button class="btn btn-outline-success btn-sm" onclick="exportToExcel()">Export Excel</button>
+      </div>
+    </div>
+
+    <div class="input-group mb-3">
+      <input type="text" id="taskInput" class="form-control" placeholder="Enter a task" />
+      <input type="date" id="dueDate" class="form-control" style="max-width: 200px;" />
+      <button class="btn btn-primary" onclick="addTask()">Add</button>
+    </div>
+
+    <div class="mb-2 d-flex justify-content-between align-items-center">
+      <div>
+        <button class="btn btn-outline-secondary btn-sm filter-btn" onclick="setFilter('all')">All</button>
+        <button class="btn btn-outline-secondary btn-sm filter-btn" onclick="setFilter('active')">Pending</button>
+        <button class="btn btn-outline-secondary btn-sm filter-btn" onclick="setFilter('completed')">Completed</button>
+      </div>
+      <span id="counter" class="text-muted"></span>
+    </div>
+
+    <ul class="list-group" id="taskList"></ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
